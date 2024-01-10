@@ -1,14 +1,13 @@
-import NavBar from './components/NavBar';
-import Home from './components/Home';
+import React from 'react';
+import NavigationBar from './components/NavigationBar';
+import MainBody from './components/MainBody';
 
 function App() {
     return (
-        <div className="App">
-            <NavBar/>
-            <div className="content">
-                <Home />
-            </div>
-        </div>
+        <>
+            <NavigationBar />
+            <MainBody />
+        </>
     );
 }
 
