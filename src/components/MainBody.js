@@ -1,45 +1,23 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import RightPanel from './RightPanel';
+import LeftPanel from './LeftPanel'
+import Divider from '@mui/material/Divider';
+
 
 function MainBody() {
     return (
         <Container maxWidth="lg">
-            <Box my={4}>
-                <Typography variant="h4" gutterBottom>
-                    Introduction
-                </Typography>
-                {/* Content for Introduction */}
-            </Box>
-
-            <Box my={4}>
-                <Typography variant="h4" gutterBottom>
-                    Working Experience
-                </Typography>
-                {/* Content for Working Experience */}
-            </Box>
-
-            <Box my={4}>
-                <Typography variant="h4" gutterBottom>
-                    Projects
-                </Typography>
-                {/* Content for Projects */}
-            </Box>
-
-            <Box my={4}>
-                <Typography variant="h4" gutterBottom>
-                    Activities
-                </Typography>
-                {/* Content for Activities */}
-            </Box>
-
-            <Box my={4}>
-                <Typography variant="h4" gutterBottom>
-                    Utilities
-                </Typography>
-                {/* Content for Utilities */}
-            </Box>
+            <Grid container spacing={4} alignItems="stretch">
+                <Grid item xs={12} md={4}>
+                    <LeftPanel />
+                    <Divider orientation="vertical" flexItem sx={{ width: 100 }}/>
+                </Grid>
+                <Grid item xs={12} md={8}>
+                    <RightPanel />
+                </Grid>
+            </Grid>
         </Container>
     );
 }
