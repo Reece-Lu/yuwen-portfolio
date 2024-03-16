@@ -5,15 +5,19 @@ import Divider from '@mui/material/Divider';
 import ProjectCard from './ProjectCard';
 import Modal from '@mui/material/Modal';
 import { CardContent } from '@mui/joy';
+import LearningJourneyHubModal from './LearningJourneyHubModal';
+
 
 
 function RightPanel() {
     const [open, setOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
+    const [isLearningJourneyHub, setIsLearningJourneyHub] = useState(false);
 
     const handleOpen = (data) => {
         setSelectedProject(data);
         setOpen(true);
+        setIsLearningJourneyHub(data.projectName === "LearningJourneyHub");
     };
 
     const handleClose = () => setOpen(false);
@@ -54,25 +58,33 @@ function RightPanel() {
             {projectDataList.map((data, index) => (
                 <ProjectCard key={index} projectData={data} onCardClick={handleOpen} />
             ))}
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', border: '2px solid #000', boxShadow: 24, p: 4 }}>
-                    {selectedProject && (
-                        <CardContent>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
-                                {selectedProject.projectName}
-                            </Typography>
-                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                {selectedProject.description}
-                            </Typography>
-                        </CardContent>
-                    )}
-                </Box>
-            </Modal>
+            {isLearningJourneyHub ? (
+                <LearningJourneyHubModal
+                    open={open}
+                    onClose={handleClose}
+                    projectData={selectedProject}
+                />
+            ) : (
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                >
+                    <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', border: '2px solid #000', boxShadow: 24, p: 4 }}>
+                        {selectedProject && (
+                            <CardContent>
+                                <Typography id="modal-modal-title" variant="h6" component="h2">
+                                    {selectedProject.projectName}
+                                </Typography>
+                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                    {selectedProject.description}
+                                </Typography>
+                            </CardContent>
+                        )}
+                    </Box>
+                </Modal>
+            )}
         </Box>
     );
 }
