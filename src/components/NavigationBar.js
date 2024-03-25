@@ -14,13 +14,13 @@ function NavigationBar() {
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     My Portfolio
                 </Typography>
-                <Tabs textColor="inherit">
-                    <Tab label="Home" />
-                    <Tab label="Working Experience" />
-                    <Tab label="Projects" />
-                    <Tab label="Activities" />
-                    <Tab label="Kits" />
-                </Tabs>
+                {/*<Tabs textColor="inherit">*/}
+                {/*    <Tab label="Home" />*/}
+                {/*    <Tab label="Working Experience" />*/}
+                {/*    <Tab label="Projects" />*/}
+                {/*    <Tab label="Activities" />*/}
+                {/*    <Tab label="Kits" />*/}
+                {/*</Tabs>*/}
                 <Button color="inherit" component={RouterLink} to="/openapi">
                     OpenAPI
                 </Button>
