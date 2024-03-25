@@ -22,9 +22,8 @@ function LearningJourneyHubModal({ open, onClose, projectData }) {
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: 400,
+                width: '60%',
                 bgcolor: 'background.paper',
-                border: '2px solid #000',
                 boxShadow: 24,
                 p: 4
             }}>
@@ -37,7 +36,7 @@ function LearningJourneyHubModal({ open, onClose, projectData }) {
                             {projectData.description}
                         </Typography>
                         <Box sx={{ mt: 2, display: 'flex', justifyContent: 'flex-end' }}>
-                            <Button variant="contained" onClick={handleButtonClick}>Explore</Button>
+                            <Button variant="contained" style ={{width:'100%'}} onClick={handleButtonClick}>Explore</Button>
                         </Box>
                     </>
                 )}

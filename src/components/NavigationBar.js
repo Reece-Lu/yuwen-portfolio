@@ -4,6 +4,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
+import Button from '@mui/material/Button';
+import { Link as RouterLink } from 'react-router-dom';
 
 function NavigationBar() {
     return (
@@ -19,6 +21,9 @@ function NavigationBar() {
                     <Tab label="Activities" />
                     <Tab label="Kits" />
                 </Tabs>
+                <Button color="inherit" component={RouterLink} to="/openapi">
+                    OpenAPI
+                </Button>
             </Toolbar>
         </AppBar>
     );
