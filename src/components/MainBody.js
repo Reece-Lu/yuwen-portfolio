@@ -10,11 +10,11 @@ function MainBody() {
     return (
         <Container maxWidth="lg">
             <Grid container spacing={4} alignItems="stretch">
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4.58}>
                     <LeftPanel />
                     <Divider orientation="vertical" flexItem sx={{ width: 100 }}/>
                 </Grid>
-                <Grid item xs={12} md={8}>
+                <Grid item xs={12} md={7.42}>
                     <RightPanel />
                 </Grid>
             </Grid>

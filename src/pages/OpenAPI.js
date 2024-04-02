@@ -5,7 +5,7 @@ import 'swagger-ui-react/swagger-ui.css';
 const OpenAPI = () => {
     return (
         <div>
-            <SwaggerUI url="https://meetyuwen.com:8000/openapi.json" />
+            <SwaggerUI url="http://meetyuwen.com:8000/openapi.json" />
         </div>
     );
 };

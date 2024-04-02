@@ -10,7 +10,7 @@ function NavigationBar() {
         <AppBar position="static">
             <Toolbar>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    My Portfolio
+                    meetyuwen.com
                 </Typography>
                 {/*<Tabs textColor="inherit">*/}
                 {/*    <Tab label="Home" />*/}
