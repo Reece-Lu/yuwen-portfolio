@@ -15,7 +15,7 @@ const Root = styled('div')(({ theme }) => ({
 export default function DividerText({ label }) {
     return (
         <Root>
-            <Divider textAlign="left">
+            <Divider textAlign="left" sx={{mt:'1rem', mb:'0.5rem'}}>
                 <Chip label={ label } color="success" size="small" />
             </Divider>
         </Root>

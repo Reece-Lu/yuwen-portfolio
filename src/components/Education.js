@@ -31,24 +31,27 @@ const EducationItem = ({ degree, imageName, institution, dateRange, details }) =
     }
 
     return (
-        <Box sx={{ fontFamily: theme.typography.fontFamily, display: 'flex', alignItems: 'center'}}>
-            <Box sx={{ marginBottom: '1%'}}>
-                <Typography variant="body2" component="h3" gutterBottom sx={{ fontSize: '0.875rem' }} >
+        <Box sx={{ fontFamily: theme.typography.fontFamily, display: 'flex', flexDirection: 'column' }}>
+            <Box>
+                <Typography variant="body2" component="h3" gutterBottom sx={{ fontSize: '0.875rem', mt:'0.2rem' }} >
                     {iconSrc && (
                         <Box component="img" src={iconSrc} alt={degree + " icon"}
                              sx={{ width: 'auto', height: '1rem', mr: 0.5 }} />
                     )}
                     {degree}
                 </Typography>
-                <Typography variant="subtitle1" gutterBottom sx={{ fontSize: '0.875rem' }}>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <Typography variant="body2" color="text.secondary" sx={{ ml: 3 }}>
                     {institution}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ fontSize: '0.875rem' }}>
+                <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic' }}>
                     {dateRange}
                 </Typography>
             </Box>
         </Box>
     );
+
 };
 
 const Education = () => {
@@ -57,19 +60,19 @@ const Education = () => {
             degree: "Master of Engineering in Applied Data Science",
             imageName: 'master',
             institution: "University of Victoria, Canada",
-            dateRange: "Septemper 2022 - August 2023",
+            dateRange: "Sep 2022 - Aug 2023",
         },
         {
             degree: "Bachelor of Software Engineering",
             imageName: 'bachelor',
             institution: "Beijing Union University, China",
-            dateRange: "September 2018 - July 2022"
+            dateRange: "Sep 2018 - Jul 2022"
         },
         {
             degree: "Exchange Program in Computer Science",
             imageName: 'exchange',
             institution: "University of Science and Technology Beijing, China",
-            dateRange: "September 2020 - January 2021"
+            dateRange: "Sep 2020 - Jan 2021"
         },
     ];
 

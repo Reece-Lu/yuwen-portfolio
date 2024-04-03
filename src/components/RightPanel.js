@@ -6,6 +6,8 @@ import ProjectCard from './ProjectCard';
 import Modal from '@mui/material/Modal';
 import { CardContent } from '@mui/joy';
 import LearningJourneyHubModal from './LearningJourneyHubModal';
+import Education from './Education';
+import DividerText from './DividerText';
 
 
 
@@ -51,8 +53,10 @@ function RightPanel() {
 
     return (
         <Box sx={{ marginLeft: '2.5%', marginRight: '5%' }}>
-            <Typography variant="h6" style={{marginTop:'3%'}}>Github Contributions Chart</Typography>
+            <DividerText label='Github Contributions'/>
             <img src="https://ghchart.rshah.org/Reece-Lu" alt="Yuwen Lu's Github Contribution chart" />
+            <DividerText label='Education'/>
+            <Education />
             <Divider flexItem sx={{ width: '100%', marginTop: 3, marginBottom:3}}/>
             <Typography variant="h6" style={{marginTop:'3%'}}>Projects</Typography>
             {projectDataList.map((data, index) => (
