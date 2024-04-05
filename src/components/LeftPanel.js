@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ContactInfo from './ContactInfo';
 
 
 // Create a theme instance.
@@ -21,6 +22,7 @@ function LeftPanel() {
             <Typography variant="body2" style={{ marginTop: '3%', textAlign: 'center', fontFamily: theme.typography.fontFamily }}>
                 M.Eng in Applied Data Science, U. of Victoria. Co-op at Ocean Networks Canada, focusing on software test automation.
             </Typography>
+            <ContactInfo/>
         </Box>
     );
 }

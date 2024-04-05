@@ -33,7 +33,7 @@ const EducationItem = ({ degree, imageName, institution, dateRange, details }) =
     return (
         <Box>
             <Box>
-                <Typography variant="body2" component="h3" sx={{ fontSize: '0.875rem', mt:'0.2rem' }} >
+                <Typography variant="body2" component="h3" sx={{ fontSize: '0.875rem'}} >
                     {iconSrc && (
                         <Box component="img" src={iconSrc} alt={degree + " icon"}
                              sx={{ width: 'auto', height: '1rem', mr: 0.5 }} />
