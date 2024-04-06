@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Link from '@mui/material/Link';
-import companyIcon from '../assets/ocean_networks_canada_logo.jpeg';
+import companyIcon from '../../assets/ocean_networks_canada_logo.jpeg';
 
 
 const WorkingExperienceItem = ({ position, company, dateRange}) => {

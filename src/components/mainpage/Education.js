@@ -2,11 +2,11 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { createTheme,ThemeProvider } from '@mui/material/styles';
-import '../assets/fonts/Nunito/fonts.css';
+import '../../assets/fonts/Nunito/fonts.css';
 // Import your images
-import masterIcon from '../assets/master-icon.png';
-import bachelorIcon from '../assets/coder.png';
-import exchangeIcon from '../assets/computer.png';
+import masterIcon from '../../assets/master-icon.png';
+import bachelorIcon from '../../assets/coder.png';
+import exchangeIcon from '../../assets/computer.png';
 
 const theme = createTheme({
     typography: {

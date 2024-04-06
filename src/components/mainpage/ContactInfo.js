@@ -1,8 +1,8 @@
 import React from 'react';
-import LinkedInIcon from '../assets/linkedin.png';
-import EmailIcon from '../assets/email.png';
-import GitHubIcon from '../assets/github.png';
-import CVIcon from '../assets/cv.png';
+import LinkedInIcon from '../../assets/linkedin.png';
+import EmailIcon from '../../assets/email.png';
+import GitHubIcon from '../../assets/github.png';
+import CVIcon from '../../assets/cv.png';
 
 const ContactInfo = () => {
     return (

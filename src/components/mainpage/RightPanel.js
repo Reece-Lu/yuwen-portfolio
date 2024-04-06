@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Education from './Education';
-import DividerText from './DividerText';
+import DividerText from '../DividerText';
 import WorkingExperience from './WorkingExperience';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';

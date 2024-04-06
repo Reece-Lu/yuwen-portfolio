@@ -1,9 +1,9 @@
 import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import RightPanel from './RightPanel';
-import LeftPanel from './LeftPanel';
-import Projects from './Projects';
+import RightPanel from './mainpage/RightPanel';
+import LeftPanel from './mainpage/LeftPanel';
+import Projects from './mainpage/Projects';
 
 
 function MainBody() {

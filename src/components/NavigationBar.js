@@ -21,7 +21,7 @@ function NavigationBar() {
             <Button
                 color="inherit"
                 component={RouterLink}
-                to="/openapi"
+                to="/projectapis"
                 sx={{ height: '2rem', lineHeight: '2rem', padding: '0 1rem' }} // Adjust padding as needed
             >
                 Project APIs
