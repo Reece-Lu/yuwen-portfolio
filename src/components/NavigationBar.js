@@ -24,7 +24,7 @@ function NavigationBar() {
                 to="/openapi"
                 sx={{ height: '2rem', lineHeight: '2rem', padding: '0 1rem' }} // Adjust padding as needed
             >
-                OpenAPI
+                Project APIs
             </Button>
         </AppBar>
     );

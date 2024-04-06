@@ -2,6 +2,7 @@ import React from 'react';
 import LinkedInIcon from '../assets/linkedin.png';
 import EmailIcon from '../assets/email.png';
 import GitHubIcon from '../assets/github.png';
+import CVIcon from '../assets/cv.png';
 
 const ContactInfo = () => {
     return (
@@ -14,6 +15,9 @@ const ContactInfo = () => {
             </a>
             <a href="https://github.com/Reece-Lu" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem' }}>
                 <img src={GitHubIcon} alt="GitHub" style={{ width: '1.25rem', height: '1.25rem' }} />
+            </a>
+            <a href="https://github.com/Reece-Lu" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem' }}>
+                <img src={CVIcon} alt="CV" style={{ width: '1.25rem', height: '1.25rem' }} />
             </a>
         </div>
     );
