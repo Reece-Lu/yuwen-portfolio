@@ -1,0 +1,21 @@
+.sticky-cards-container {
+    margin-inline: max(0px, ((100% - 260px) / 2));
+    font: 45%/1.4 system-ui;
+}
+
+.card {
+    position: sticky;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    border-radius: 4px;
+    width: 90%; /* 卡片宽度为容器宽度的90% */
+    max-width: 400px; /* 卡片的最大宽度，确保卡片不会过大 */
+    height: 3rem; /* 卡片高度 */
+}
+
+.scrolling-container {
+    height: 20rem; /* 或者你想要的任何高度 */
+    overflow: auto; /* 添加滚动条 */
+    position: relative; /* 定位基于这个容器 */
+}

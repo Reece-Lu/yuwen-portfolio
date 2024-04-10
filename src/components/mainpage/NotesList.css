@@ -1,0 +1,23 @@
+.note-card {
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+    border: 0.1rem solid #e0e0e0; /* 轻微的边框 */
+    margin-bottom: 2px; /* 在卡片之间添加一些空间 */
+    border-radius: 8px; /* 圆角边框 */
+}
+
+.note-card h4 {
+    margin: 0; /* 移除标题的默认外边距 */
+}
+
+.note-card p {
+    margin: 0;
+}
+
+.notes-list-container {
+    height: 200px; /* 设置小窗口的固定高度 */
+    overflow-y: scroll; /* 超过高度则显示滚动条 */
+    border: 1px #ccc; /* 可选，为了更好地看到窗口的边界 */
+    padding: 10px; /* 可选，为内容添加一些内边距 */
+}
