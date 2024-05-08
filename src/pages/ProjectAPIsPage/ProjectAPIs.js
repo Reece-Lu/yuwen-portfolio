@@ -5,6 +5,8 @@ import "./styles.css";
 import { useState } from "react";
 import { initialTabs as tabs } from "./ingredients.ts";
 import { motion, AnimatePresence } from "framer-motion";
+import Box from '@mui/material/Box';
+
 
 const ProjectAPIs = () => {
     const [selectedTab, setSelectedTab] = useState(tabs[0]);
@@ -37,7 +39,9 @@ const ProjectAPIs = () => {
                             exit={{ y: -10, opacity: 0 }}
                             transition={{ duration: 0.2 }}
                         >
-                            <SwaggerUI url={selectedTab.swagger} />
+                            <Box sx={{ maxHeight: '75vh', overflow: 'auto' }}>
+                                <SwaggerUI url={selectedTab.swagger} />
+                            </Box>
                         </motion.div>
                     </AnimatePresence>
                 </main>
