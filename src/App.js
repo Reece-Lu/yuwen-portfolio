@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from './components/NavigationBar';
-import ProjectAPIs from './pages/ProjectAPIs';
+import ProjectAPIs from './pages/ProjectAPIsPage/ProjectAPIs';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
