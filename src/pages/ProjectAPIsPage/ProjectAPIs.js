@@ -39,7 +39,7 @@ const ProjectAPIs = () => {
                             exit={{ y: -10, opacity: 0 }}
                             transition={{ duration: 0.2 }}
                         >
-                            <Box sx={{ maxHeight: '75vh', overflow: 'auto' }}>
+                            <Box sx={{ maxHeight: '80vh', overflow: 'auto' }}>
                                 <SwaggerUI url={selectedTab.swagger} />
                             </Box>
                         </motion.div>
