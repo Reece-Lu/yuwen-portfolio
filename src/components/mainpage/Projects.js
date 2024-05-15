@@ -35,14 +35,6 @@ function Projects() {
             dateRange: "01/2022-06/2022",
             description: "Developed a full-stack property management system...",
             cardColor: "#11477B"
-        },
-        {
-            imageUrl: "/images/book.png",
-            projectName: "LearningJourneyHub",
-            technologies: "MarkDown, GitHub Action",
-            dateRange: "01/2021-current",
-            description: "Created a GitHub repository to record my learning journey...",
-            cardColor: "#11477B"
         }
     ];
 

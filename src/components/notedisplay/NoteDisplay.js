@@ -1,8 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { scroll } from 'framer-motion/dom';
+import { fetchAllNotes, getNoteImage } from '../../api/NoteDisplayApi';
+import config from '../../config/config.json';
 
 function NoteDisplay() {
+    const [notes, setNotes] = useState([]);
+
     useEffect(() => {
+        const loadNotes = async () => {
+            try {
+                const data = await fetchAllNotes();
+                const formattedNotes = data.map(note => ({
+                    id: note.noteid,
+                    name: note.notename,
+                    imageUrl: getNoteImage(note.notecovername),
+                    link: `${config.learningJourneyHubRoot}${note.noteurl}`
+                }));
+                setNotes(formattedNotes);
+            } catch (error) {
+                console.error('Error fetching notes:', error);
+            }
+        };
+
+        loadNotes();
+
         const progressWheel = document.querySelector(".indicator");
 
         scroll((progress) => {
@@ -12,13 +33,6 @@ function NoteDisplay() {
             axis: "x"
         });
     }, []);
-
-    const notes = Array.from({ length: 16 }, (_, i) => ({
-        id: i,
-        name: `笔记${i + 1}`,
-        imageUrl: "https://via.placeholder.com/150", // 使用占位图作为示例
-        link: "#"
-    }));
 
     return (
         <div style={{
@@ -53,22 +67,23 @@ function NoteDisplay() {
                 alignItems: 'center',
                 display: 'flex',
                 listStyle: 'none',
-                height: '130px',
+                height: '150px',
                 overflowX: 'scroll',
-                padding: '20px 0',
+                padding: '10px 0',
                 flex: '0 0 90%',
             }}>
                 {notes.map((note) => (
                     <li key={note.id} style={{
-                        flex: '0 0 77.27px',
-                        height: '100px',
+                        flex: '0 0 100.5px',
+                        height: '130px',
                         background: '#ffffff',
                         margin: '0 5px',
                         borderRadius: '10px',
-                        position: 'relative'
+                        position: 'relative',
+                        padding: '5px',
                     }}>
                         <a href={note.link} style={{ display: 'flex', height: '100%' }}>
-                            <img src={note.imageUrl} alt={note.name} style={{ width: '100%', height: '100%', borderRadius: '10px' }} />
+                            <img src={note.imageUrl} alt={note.name} style={{ width: '100.5px', height: '130px', borderRadius: '10px' }} />
                             <div style={{
                                 position: 'absolute',
                                 bottom: '0',
