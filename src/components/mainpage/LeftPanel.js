@@ -5,7 +5,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import ContactInfo from './ContactInfo';
 
 
-// Create a theme instance.
 const theme = createTheme({
     typography: {
         fontFamily: 'Merienda, cursive',

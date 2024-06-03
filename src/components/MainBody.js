@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import RightPanel from './mainpage/RightPanel';
 import LeftPanel from './mainpage/LeftPanel';
 import Projects from './mainpage/Projects';
-import NotesList from './mainpage/NotesList';
 import NoteDisplay from '../components/notedisplay/NoteDisplay';
 
 
@@ -26,7 +25,6 @@ function MainBody() {
                 <Grid item xs={12} md={6}>
                     <NoteDisplay />
                 </Grid>
-                {/* Projects Section - spans the entire container width */}
 
             </Grid>
         </Container>

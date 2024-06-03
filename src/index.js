@@ -1,5 +1,4 @@
 import * as ReactDOMClient from 'react-dom/client';
-import { render } from "react-dom";
 import React from 'react';
 import App from './App';
 import './assets/fonts/Nunito/fonts.css';

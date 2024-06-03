@@ -2,6 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { scroll } from 'framer-motion/dom';
 import { fetchAllNotes, getNoteImage } from '../../api/NoteDisplayApi';
 import config from '../../config/config.json';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Typography from '@mui/joy/Typography';
+
+const theme = createTheme({
+    typography: {
+        fontFamily: 'Nunito, Arial, sans-serif',
+    },
+});
 
 function NoteDisplay() {
     const [notes, setNotes] = useState([]);
@@ -35,14 +43,15 @@ function NoteDisplay() {
     }, []);
 
     return (
+        <>
+        <Typography level="h2" sx={{ marginBottom: '1rem', fontFamily: theme.typography.fontFamily }}>Notes</Typography>
         <div style={{
             letterSpacing: '-0.3px',
             borderRadius: '15px',
             display: 'flex',
             backgroundColor: '#FF0266',
-            color: 'black',
-            paddingLeft: '5px',
             paddingRight: '20px',
+            marginLeft: '5%'
         }}>
             <svg id="progress" width="75" height="75" viewBox="0 0 100 100" style={{
                 top: '20px',
@@ -100,6 +109,7 @@ function NoteDisplay() {
                 ))}
             </ul>
         </div>
+        </>
     );
 }
 
