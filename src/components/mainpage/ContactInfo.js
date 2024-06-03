@@ -16,7 +16,7 @@ const ContactInfo = () => {
             <a href="https://github.com/Reece-Lu" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem' }}>
                 <img src={GitHubIcon} alt="GitHub" style={{ width: '1.25rem', height: '1.25rem' }} />
             </a>
-            <a href="https://github.com/Reece-Lu" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem' }}>
+            <a href="https://www.meetyuwen.com/springapp/download-resume" download style={{ margin: '0 1rem' }}>
                 <img src={CVIcon} alt="CV" style={{ width: '1.25rem', height: '1.25rem' }} />
             </a>
         </div>

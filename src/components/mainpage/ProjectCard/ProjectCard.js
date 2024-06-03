@@ -24,7 +24,7 @@ export default function ProjectCard({ projectData, onCardClick }) {
             >
                 <CardContent className={styles.cardContentBox}>
                     <Grid container spacing={2}>
-                        <Grid item xs={12} md={5}>
+                        <Grid item xs={12} md={6}>
                             <Typography level="h3" sx={{ fontFamily: theme.typography.fontFamily }}>
                                 {projectData.title}
                             </Typography>
@@ -32,7 +32,7 @@ export default function ProjectCard({ projectData, onCardClick }) {
                                 {projectData.category}
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={7}>
+                        <Grid item xs={12} md={6}>
                             <Grid container spacing={1}>
                                 <Grid item xs={12} sx={{ textAlign: { xs: 'left', md: 'right' } }}>
                                     <Typography sx={{ fontSize: '1rem' }}>
@@ -46,7 +46,7 @@ export default function ProjectCard({ projectData, onCardClick }) {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} sx={{ fontFamily: theme.typography.fontFamily }}>
+                        <Grid item xs={12} sx={{ fontFamily: theme.typography.fontFamily, paddingTop: '0 !important' }}>
                             <Typography level="body-sm" sx={{ fontFamily: theme.typography.fontFamily }}>
                                 {projectData.descriptionList.map((description, index) => (
                                     <Box key={index} sx={{ marginBottom: '0.5rem' }}>
@@ -55,7 +55,7 @@ export default function ProjectCard({ projectData, onCardClick }) {
                                 ))}
                             </Typography>
                         </Grid>
-                        <Grid item xs={12} sx={{ marginTop: 0 }}>
+                        <Grid item xs={12} sx={{ paddingTop: '0 !important' }}>
                             <AttachmentsBar
                                 downloadFiles={projectData.downloadFiles}
                                 gitHubLink={projectData.gitHubLink}

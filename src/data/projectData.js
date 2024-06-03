@@ -81,9 +81,9 @@ const projectDataList = [{
         }
     },
     {
-        "title": "Property Management Website",
-        "project": "Property Management Website",
-        "category": "Full Stack Developer",
+        "title": "Residential Complex Management Website",
+        "project": "Residential Complex Management Website",
+        "category": "Undergraduate Graduation Design Project",
         "summary": "Developed a comprehensive property management system following software engineering standards.",
         descriptionList: [
             "1. **Developed** the entire property management system independently, following B/S architecture ensuring front-end/back-end separation.",
