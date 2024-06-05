@@ -12,23 +12,27 @@ const projectDataList = [{
         {
             "fileName": "Raw Data",
             "fileExtension": ".csv",
-            "iconName": "csv"
+            "iconName": "csv",
+            "filenameOnServer": "CSC503 Laptop Price Prediction with Web Crawling Raw Data.csv"
         },
         {
             "fileName": "Processed Data",
             "fileExtension": ".csv",
-            "iconName": "csv"
+            "iconName": "csv",
+            "filenameOnServer":"CSC503 Laptop Price Prediction with Web Crawling Cleaned Data.csv"
         },
         {
             "fileName": "Project Report",
             "fileExtension": ".pdf",
-            "iconName": "pdf"
+            "iconName": "pdf",
+            "filenameOnServer":"CSC503 Laptop Price Prediction with Web Crawling.pdf"
         },
         {
             "fileName": "Project Slides",
             "fileExtension": ".pdf",
-            "iconName": "pdf"
-        },
+            "iconName": "pdf",
+            "filenameOnServer":"CSC503 Laptop Price Prediction with Web Crawling Presentation Slides.pdf"
+        }
     ],
     "GitHubLink": "https://github.com/Reece-Lu/Laptop_Data_Crawler_and_Price_Prediction_UvicCSC503Project",
     "pageLink": "https://your-page-link.com",
@@ -55,17 +59,20 @@ const projectDataList = [{
             {
                 "fileName": "Research Paper",
                 "fileExtension": ".pdf",
-                "iconName": "pdf"
+                "iconName": "pdf",
+                "filenameOnServer":"Quantum Machine Learning (Convolutional neural network as an example)_V01022209_Yuwen_Lu.pdf"
             },
             {
                 "fileName": "Presentation Slides",
                 "fileExtension": ".pdf",
-                "iconName": "pdf"
+                "iconName": "pdf",
+                "filenameOnServer":"Quantum Machine Learning (Convolutional neural network as an example)_V01022209_Yuwen_Lu Presentation Slides.pdf"
             },
             {
                 "fileName": "Jupyter Notebook",
                 "fileExtension": ".ipynb",
-                "iconName": "ipynb"
+                "iconName": "ipynb",
+                "filenameOnServer":"Quantum Machine Learning (Convolutional neural network as an example)_V01022209_Yuwen_Lu.ipynb"
             }
         ],
         "GitHubLink": "https://github.com/Reece-Lu/QML-Model-Serving",
@@ -95,9 +102,15 @@ const projectDataList = [{
         ],
         "downloadFiles": [
             {
-                "fileName": "Project Report",
+                "fileName": "Project Report(Chinese)",
                 "fileExtension": ".pdf",
-                "iconName": "pdf"
+                "iconName": "pdf",
+                "filenameOnServer":"Residential_Complex_Management_Report_Chinese.pdf"
+            },{
+                "fileName": "Project Report(Machine Translation)",
+                "fileExtension": ".pdf",
+                "iconName": "pdf",
+                "filenameOnServer":"Residential_Complex_Management_Report_English_DeepL_Translate_Machine.pdf"
             }
         ],
         "GitHubLink": [

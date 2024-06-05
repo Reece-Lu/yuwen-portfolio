@@ -15,12 +15,11 @@ const theme = createTheme({
     },
 });
 
-export default function ProjectCard({ projectData, onCardClick }) {
+export default function ProjectCard({ projectData }) {
     return (
         <div>
             <Card
                 className={styles.card}
-                onClick={() => onCardClick(projectData)}
             >
                 <CardContent className={styles.cardContentBox}>
                     <Grid container spacing={2}>
