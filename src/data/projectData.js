@@ -114,7 +114,6 @@ const projectDataList = [{
             }
         ],
         "GitHubLink": [
-            "https://github.com/Reece-Lu/propertymanagement-graduationproject",
             "https://github.com/Reece-Lu/propertymanagement-graduationproject-server"
         ],
         "pageLink": "https://your-property-management-page-link.com",

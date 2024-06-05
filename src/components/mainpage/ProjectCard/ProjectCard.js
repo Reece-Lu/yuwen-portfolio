@@ -57,7 +57,7 @@ export default function ProjectCard({ projectData }) {
                         <Grid item xs={12} sx={{ paddingTop: '0 !important' }}>
                             <AttachmentsBar
                                 downloadFiles={projectData.downloadFiles}
-                                gitHubLink={projectData.gitHubLink}
+                                gitHubLink={projectData.GitHubLink}
                                 pageLink={projectData.pageLink}
                             />
                         </Grid>
