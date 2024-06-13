@@ -51,9 +51,21 @@ function RightPanel() {
                     <DividerText label='Github Contributions' />
                     <Box
                         ref={calendarContainerRef}
-                        style={{ width: '100%', height: 'auto', marginTop: '3%', marginBottom: '3%', overflowX: 'auto' }}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                            marginTop: '3%',
+                            marginBottom: '3%',
+                            overflowX: 'auto',
+                            // Hide scrollbar for Chrome, Safari and Opera
+                            WebkitOverflowScrolling: 'touch',
+                            '::-webkit-scrollbar': { display: 'none' },
+                            // Hide scrollbar for IE, Edge and Firefox
+                            msOverflowStyle: 'none',
+                            scrollbarWidth: 'none'
+                        }}
                     >
-                        <GitHubCalendar username="reece-lu" />
+                        <GitHubCalendar username="reece-lu" colorScheme="light"/>
                     </Box>
                     <Divider flexItem sx={{ width: '100%', marginTop: 3, marginBottom: 3 }} />
                 </Box>
