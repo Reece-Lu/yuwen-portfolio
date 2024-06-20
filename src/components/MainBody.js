@@ -5,6 +5,7 @@ import RightPanel from './mainpage/RightPanel';
 import LeftPanel from './mainpage/LeftPanel';
 import Projects from './mainpage/Projects';
 import NoteDisplay from '../components/notedisplay/NoteDisplay';
+import VmUsageChart from '../components/VmUsageChart';
 
 
 function MainBody() {
@@ -22,10 +23,12 @@ function MainBody() {
                 <Grid item xs={12}>
                     <Projects />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={5.5}>
                     <NoteDisplay />
                 </Grid>
-
+                <Grid item xs={12} md={6.5}>
+                    <VmUsageChart />
+                </Grid>
             </Grid>
         </Container>
     );
